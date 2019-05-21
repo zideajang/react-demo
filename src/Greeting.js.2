@@ -1,0 +1,40 @@
+import React, {useState} from 'react';
+import Row from './Row/Row';
+
+ const Greeting = (props)=>{
+
+    const [title,setTitle] = useState('reactjs');
+    const [author, setAuthor] = useState('zidea');
+    
+    function handleTitleChange(e){
+        setTitle(e.target.value);
+    }
+
+    function handleAuthorNameChange(e){
+        setAuthor(e.target.value);
+    }
+
+    return(
+        <div className="App">
+            <section className="card">
+                <Row label="课程名称">
+                <input 
+                        value={title}
+                        onChange={handleTitleChange}
+                        />
+                </Row>
+            </section>
+            <section className="card">
+                <Row label="作者">
+                <input 
+                        value={author}
+                        onChange={handleAuthorNameChange}
+                        />
+                </Row>
+            </section>
+        </div>
+    )
+}
+
+
+export default Greeting;

@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategrey;
+  height: 100vh;
+
+}
+
+.card {
+  padding: 12px;
+  background-color: lightblue;
+  width: 240px;
+  height: 80px;
+  box-shadow: 2px 2px;
+}
+
+.tut {
+  background-color: deepskyblue;
+}
+
+.container {
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+.nav-link {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}

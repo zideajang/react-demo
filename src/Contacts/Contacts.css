@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: lightblue;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100vw; */
+}
+
+
+
+.contact__item {
+    display: flex;
+    background-color: 'orangered';
+    color: darkblue;
+    border: 1px solid hsl(0, 0%, 100%);
+    align-items: center;
+
+}
+
+.contact__item__thumb {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__item_info {
+    flex-grow: 1;
+    padding-left: 12px;
+}
+
+img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
